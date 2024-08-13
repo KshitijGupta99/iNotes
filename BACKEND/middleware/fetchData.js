@@ -4,7 +4,7 @@ const JWT_SECRET = 'json_$Sign'; // your json token signature
 
 const fetchData = (req, res, next) => {
     // Extract the token from the Authorization header
-    const token = req.headers['auth-token'] || req.headers['authorization'];
+    let token = req.headers['auth-token'] || req.headers['authorization'];
 
     // Check if token is provided
     if (!token) {

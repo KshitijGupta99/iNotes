@@ -47,8 +47,8 @@ const Signup = () => {
             if (response.ok) {
                 const authToken = await response.json(); // Assuming the token is returned in JSON
                 setbuffer(false)
-                console.log("Signup successful", authToken);
-                localStorage.setItem('token', authToken)
+                console.log("Signup successful", authToken.authtoken);
+                localStorage.setItem('token', authToken.authtoken)
                 setErrorMessage("");
                 navigate("/home") // Clear any previous error messages
                 // Handle successful login (e.g., save token, redirect, etc.)
