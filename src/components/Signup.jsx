@@ -87,7 +87,7 @@ const Signup = () => {
 
     return (
         <div>
-            <form onSubmit={handleClick} className='my-4' >
+            <form onSubmit={handleClick} className='my-4 px-4' >
                 <div className="mb-3">
                     <label htmlFor="username" className="form-label">Usernmame</label>
                     <input type="text" className="form-control" id="username" name="username" value={creds.username} aria-describedby="emailHelp" onChange={onChange} />
@@ -102,13 +102,13 @@ const Signup = () => {
                     <label htmlFor="exampleInputPassword1" className="form-label">Password</label>
                     <input type="password" className="form-control" id="password" name="password" value={creds.password} onChange={onChange} />
                 </div>
-                <div className="mb-3">
+                <div className="mb-4">
                     <label htmlFor="exampleInputPassword1" className="form-label">Confirm Password</label>
                     <input type="password" className="form-control" id="cpass" name="cpass" value={creds.capss} onChange={onChange} />
                 </div>
                 {buffer && <Spinner />}
                 {errorMessage && <div className="alert alert-danger alert-dismissible d-flex justify-content-between"><span>{errorMessage}</span><button style={{ backgroundColor: '#f8d7da' }} onClick={() => { setErrorMessage("") }}>&times;</button></div>}
-                <button type="submit" className="btn btn-primary">Submit</button>
+                <button type="submit my-2" className="btn btn-primary">Submit</button>
             </form>
         </div>
     )
