@@ -13,7 +13,7 @@ const Login = () => {
 
     const handleClick = async (e) => {
         setErrorMessage("")
-        const url = "http://localhost:3000";
+        const url = import.meta.env.VITE_BASE_URL;
         e.preventDefault();
         try {
             setbuffer(true);

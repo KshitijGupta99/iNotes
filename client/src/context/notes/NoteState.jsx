@@ -3,7 +3,7 @@ import NoteContext from "./NoteContext";
 import { useState } from "react";
 
 const NoteState = (props) => {
-    const url = "http://localhost:3000/notes/"
+    const url = `${import.meta.env.VITE_BASE_URL}/notes/`
     const [notes, setNote] = useState([]);
 
     const getNote = async () => {

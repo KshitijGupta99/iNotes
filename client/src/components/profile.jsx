@@ -9,7 +9,7 @@ const Profile = () => {
     const context = useContext(noteContext);
     const { getNote } = context;
     const [userInfo, setUserInfo] = useState(null);
-    const url = "http://localhost:3000/auth/userdata"
+    const url = `${import.meta.env.VITE_BASE_URL}/auth/userdata`
 
     useEffect(() => {
         const fetchData = async () => {
