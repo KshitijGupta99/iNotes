@@ -11,6 +11,7 @@ const corsOptions = {
   origin: [
     "https://i-notes-t76y.vercel.app",
     "http://localhost:5173",
+    "https://inotes-kwax.onrender.com/",
   ],
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   allowedHeaders: "Content-Type,Authorization",

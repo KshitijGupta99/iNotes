@@ -3,7 +3,7 @@ import NoteContext from "./NoteContext";
 import { useState } from "react";
 
 const NoteState = (props) => {
-    const url = `${import.meta.env.VITE_BASE_URL}/notes/`
+    const url = `https://inotes-kwax.onrender.com/notes/`
     const [notes, setNote] = useState([]);
 
     const getNote = async () => {
