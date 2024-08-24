@@ -62,58 +62,7 @@ router.post('/signup',
         }
     })
 
-// router.post('/login',
-//     [body('username').isLength({ min: 3 }),            // passing constraints to porperties                 
-//     body('password').exists], async (req, res) => {
-//         console.log('Received request body:', req.body);
-//         const errors = validationResult(req);
 
-//         if (!errors.isEmpty()) {
-//             return res.status(400).json({ errors: errors.array() });
-//         }
-//         const {username, password} = req.body;
-//         try {
-//             console.log("{username, password}");
-
-//             let user = await User.findOne({ username });
-
-//             if (!user) {
-//                 return res.status(401).json({ error: "Invalid credentials" });
-//             }
-
-//             const isMatch = await bcrypt.compare(password, user.password);
-
-//             if (!isMatch) {
-//                 return res.status(401).json({ error: "Invalid credentials" });
-//             }
-
-//             // Create and assign token to user
-
-
-
-
-
-//             const data = {
-//                 user: {
-//                     id : user.id
-//                 }
-//             }
-
-//             const authtoken = jwt.sign(data, JWT_SECRET);
-//             res.json(authtoken);
-
-
-
-//         }catch(error){
-
-//             console.error(error.message);
-//             res.status(500).send("Some Error occured");
-
-//         }
-
-
-
-// })
 
 
 
@@ -141,6 +90,7 @@ router.post('/login', async (req, res) => {                             //making
 
         const authtoken = jwt.sign(data, JWT_SECRET);
         res.json({ authtoken });
+        console.log({authtoken})
 
     } catch (error) {
 
