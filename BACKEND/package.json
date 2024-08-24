@@ -8,7 +8,7 @@
     "dev": "nodemon index.js",
     "start": "index.js"
   },
-  "proxy":""
+  "proxy":"https://i-notes-tajc.vercel.app/"
   "author": "",
   "license": "ISC",
   "dependencies": {
