@@ -13,7 +13,7 @@ const Login = () => {
 
     const handleClick = async (e) => {
         setErrorMessage("")
-        const url = "http://localhost:3000";
+        const url = "";
         e.preventDefault();
         try {
             setbuffer(true);
@@ -28,8 +28,8 @@ const Login = () => {
             if (response.ok) {
                 const authToken = await response.json(); // Assuming the token is returned in JSON
                 setbuffer(false)
-                console.log("Login successful", authToken.authtoken);
-                localStorage.setItem('token', authToken.authtoken)
+                console.log("Login successful", authToken);
+                localStorage.setItem('token', authToken)
                 setErrorMessage("");
                 navigate("/home") // Clear any previous error messages
                 // Handle successful login (e.g., save token, redirect, etc.)
