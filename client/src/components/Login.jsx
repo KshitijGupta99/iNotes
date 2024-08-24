@@ -13,7 +13,7 @@ const Login = () => {
 
     const handleClick = async (e) => {
         setErrorMessage("")
-        const url = "import.meta.env.VITE_BASE_URL";
+        const url = "https://inotes-kwax.onrender.com";
         e.preventDefault();
         try {
             setbuffer(true);

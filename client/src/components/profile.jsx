@@ -9,7 +9,7 @@ const Profile = () => {
     const context = useContext(noteContext);
     const { getNote } = context;
     const [userInfo, setUserInfo] = useState(null);
-    const url = `${import.meta.env.VITE_BASE_URL}/auth/userdata`
+    const url = `https://inotes-kwax.onrender.com/auth/userdata`
 
     useEffect(() => {
         const fetchData = async () => {

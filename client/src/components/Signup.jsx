@@ -32,7 +32,7 @@ const Signup = () => {
 
 
         setErrorMessage("")
-        const url = import.meta.env.VITE_BASE_URL;
+        const url = "https://inotes-kwax.onrender.com";
 
         try {
             setbuffer(true);
