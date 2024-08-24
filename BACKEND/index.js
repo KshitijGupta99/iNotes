@@ -9,7 +9,7 @@ const app = express()
 app.use(express.json())
 const corsOptions = {
   origin: [
-    "https://i-notes-t76y.vercel.app",
+    "https://i-notes-tajc.vercel.app",
     "http://localhost:5173",
     "https://inotes-kwax.onrender.com/",
   ],
