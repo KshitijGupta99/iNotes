@@ -32,7 +32,7 @@ const Signup = () => {
 
 
         setErrorMessage("")
-        const url = "http://localhost:3000";
+        const url = import.meta.env.VITE_BASE_URL;
 
         try {
             setbuffer(true);

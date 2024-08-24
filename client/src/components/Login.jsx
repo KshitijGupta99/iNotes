@@ -13,7 +13,7 @@ const Login = () => {
 
     const handleClick = async (e) => {
         setErrorMessage("")
-        const url = "";
+        const url = "import.meta.env.VITE_BASE_URL";
         e.preventDefault();
         try {
             setbuffer(true);
@@ -28,8 +28,8 @@ const Login = () => {
             if (response.ok) {
                 const authToken = await response.json(); // Assuming the token is returned in JSON
                 setbuffer(false)
-                console.log("Login successful", authToken);
-                localStorage.setItem('token', authToken)
+                console.log("Login successful", authToken.authToken);
+                localStorage.setItem('token', authToken.authToken)
                 setErrorMessage("");
                 navigate("/home") // Clear any previous error messages
                 // Handle successful login (e.g., save token, redirect, etc.)
