@@ -11,7 +11,7 @@ const corsOptions = {
   origin: [
     "https://i-notes-tajc.vercel.app",
     "http://localhost:5173",
-    "https://inotes-kwax.onrender.com/",
+    "https://inotes-kwax.onrender.com",
   ],
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
   allowedHeaders: "Content-Type,Authorization,auth-token",
@@ -21,7 +21,7 @@ const corsOptions = {
 
 app.use(cors(corsOptions));
 
-const port = process.env.PORT
+const port = process.env.PORT 
 app.get('/', (req, res) => {
   res.send('Hello Harry!')
 })
