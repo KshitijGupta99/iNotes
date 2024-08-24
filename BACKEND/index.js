@@ -14,7 +14,7 @@ const corsOptions = {
     "https://inotes-kwax.onrender.com/",
   ],
   methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-  allowedHeaders: "Content-Type,Authorization",
+  allowedHeaders: "Content-Type,Authorization,auth-token",
   credentials: true,
   optionsSuccessStatus: 200,
 };
