@@ -15,7 +15,7 @@ const corsOptions = {
       return res.status(200).end(); // Handle preflight request
   }
   next();
-});
+};
 
 const port = "https://inotes-kwax.onrender.com"
 app.get('/', (req, res) => {
