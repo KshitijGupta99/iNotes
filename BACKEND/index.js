@@ -30,7 +30,7 @@ app.use((req, res, next) => {
 
   next();
 });
-const port = "https://inotes-kwax.onrender.com"
+const port = process.env.PORT;
 app.get('/', (req, res) => {
   res.send('Hello Harry!')
 })
