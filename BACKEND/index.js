@@ -8,8 +8,7 @@ connectToMongo()
 const app = express()
 app.use(express.json())
 const corsOptions = {
-  ["https://i-notes-tajc.vercel.app", "local URL"],
-  origin: 'https://i-notes-tajc.vercel.app',
+  origin: ["https://i-notes-tajc.vercel.app", "http://localhost:5173"],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
   allowedHeaders: ['Content-Type', 'auth-token'],
   optionsSuccessStatus: 200,
