@@ -69,7 +69,7 @@ const ViewNotes = () => {
 
       <div className='px-3' style={{minHeight : 70 + `vh`, height: `fit-content`}}>
         <h4 className='ms-2'>{(notes.length == 0) ? "No notes here..." : ""}</h4>
-        <h6 className='px-2 mt-4 row'>{notes.map((note) => {
+        <h6 className='px-2 mt-4 row'>{notes?.map((note) => {
           
           return <NoteItem key={note._id} updateNote={updateNote} note={note} />
         })}</h6>
