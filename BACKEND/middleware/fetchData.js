@@ -5,7 +5,7 @@ const JWT_SECRET = process.env.JWT_SECRET; // your json token signature
 const fetchData = (req, res, next) => {
     // Extract the token from the Authorization header
     let token = req.headers['auth-token'] || req.headers['authorization'];
-
+ 
     // Check if token is provided
     if (!token) {
         return res.status(401).json({ message: 'Token not provided' });
