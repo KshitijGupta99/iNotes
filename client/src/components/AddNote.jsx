@@ -37,18 +37,7 @@ const AddNote = () => {
             }
         };
 
-        const alertTrigger = document.getElementById('liveAlertBtn');
-        if (alertTrigger) {
-            const handleAlertClick = () => {
-                appendAlert('Nice, you triggered this alert message!', 'success');
-            };
-            alertTrigger.addEventListener('click', handleAlertClick);
-
-            // Cleanup function to remove the event listener
-            return () => {
-                alertTrigger.removeEventListener('click', handleAlertClick);
-            };
-        }
+        
     }, []); // Empty dependency array ensures this runs only on mount and unmount
 
     return (
