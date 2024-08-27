@@ -1,6 +1,6 @@
 const jwt = require('jsonwebtoken');
 
-const JWT_SECRET = 'json_$Sign'; // your json token signature
+const JWT_SECRET = process.env.JWT_SECRET; // your json token signature
 
 const fetchData = (req, res, next) => {
     // Extract the token from the Authorization header
