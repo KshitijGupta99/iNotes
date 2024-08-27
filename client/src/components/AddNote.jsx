@@ -40,7 +40,7 @@ const AddNote = () => {
         const alertTrigger = document.getElementById('liveAlertBtn');
         if (alertTrigger) {
             const handleAlertClick = () => {
-                appendAlert('Nice, you triggered this alert message!', 'success');
+                appendAlert('Note has been added successfully!', 'success');
             };
             alertTrigger.addEventListener('click', handleAlertClick);
 
