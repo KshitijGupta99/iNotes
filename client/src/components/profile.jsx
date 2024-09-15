@@ -32,9 +32,9 @@ const Profile = () => {
         fetchData();
     }, []);
 
-    const notes = getNote()
-    const noteValue = Object.keys(notes).length;
-    var data = null
+    // const notes = getNote()
+    // const noteValue = Object.keys(notes).length;
+    // var data = null
     
     
 
@@ -43,8 +43,6 @@ const Profile = () => {
             <h2 className='my-4 '>Profile-</h2>
             <h4 className='my-4 '>Username : {`${(userInfo) ? userInfo.username : " "}`}</h4>
             <h3 className='my-4 '>Email : {`${(userInfo) ? userInfo.email : " "}`}</h3>
-            <h5 className='my-4 '>Total no of notes written -  {`${noteValue}`}</h5>
-            <h5 className='my-4 '>Latest Note : {`${23}`}</h5>
             <h5 className='my-4 '>User Since :  {`${(userInfo) ? userInfo.date.slice(0, 10) : " "}`}</h5>
 
         </div>
