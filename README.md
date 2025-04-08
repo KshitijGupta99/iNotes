@@ -8,7 +8,7 @@ This project is a simple Notes app where you can add your notes and access the f
 
 - **Feature 1:** can create your unique id.
 - **Feature 2:** can store notes and tag them as required.
-- **Feature 3:** can access the ntoes from anywhere across the globe.
+- **Feature 3:** can access the ntoes from anywhere across the globe and much more.
 
 ## Installation
 
